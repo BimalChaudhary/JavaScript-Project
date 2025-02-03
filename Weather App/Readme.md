@@ -1,1 +1,1 @@
-This is a weather App using wheather api
+# This is a weather App using wheather api
