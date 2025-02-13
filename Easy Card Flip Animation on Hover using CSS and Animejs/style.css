@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Prata&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background: #402e7a;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    perspective: 1000px;
+}
+.card{
+    position: relative;
+    width: 20rem;
+    height: 28rem;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transform: rotateY(0deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4c3bcf, #4b70f5);
+    color: #ebd3f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 1.2rem;
+}
+.back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-image: url("https://images.hdqwalls.com/wallpapers/peaceful-time-with-bestfriend-sq.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card:nth-child(2) .back{
+    background-image: url('https://wallpapers.com/images/high/love-alone-boy-in-bed-sd0yvw6cvk1lof2w.webp');
+}
+.card:nth-child(3) .back{
+    background-image: url('https://wallpapers.com/images/high/alone-boy-anime-army-green-jacket-xjppa22d1fdlwaga.webp');
+}
+.front h4{
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.topText{
+    border-bottom: 3px solid #ebd3f8;
+    text-align: left;
+}
+.bottomText{
+    border-bottom: 3px solid #ebd3f8;
+    text-align: right;
+}
+.front h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
